@@ -1,0 +1,25 @@
+{
+  "name": "fareskhalid/dbman",
+  "description": "SQL migration and seeder CLI for MySQL and MariaDB",
+  "type": "library",
+  "license": "proprietary",
+  "require": {
+    "php": "^8.2",
+    "ext-mysqli": "*",
+    "composer-runtime-api": "^2.2",
+    "vlucas/phpdotenv": "^5.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Fares\\Dbman\\": "src/"
+    }
+  },
+  "bin": [
+    "bin/dbman"
+  ],
+  "scripts": {
+    "test": "php tests/checks.php",
+    "test:integration": "php tests/integration.php",
+    "test:package": "php tests/package.php"
+  }
+}
